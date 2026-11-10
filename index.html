@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamBox - Video Subscription</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #10101c;
+            color: white;
+        }
+
+        header {
+            background: #19192b;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #ff4757;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(120deg, #292952, #111122);
+        }
+
+        .hero h2 {
+            font-size: 42px;
+        }
+
+        .hero p {
+            color: #cccccc;
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 35px;
+            text-align: center;
+        }
+
+        .movies, .plans {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie, .plan {
+            background: #202035;
+            padding: 25px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .movie {
+            font-size: 22px;
+        }
+
+        .plan h3 {
+            color: #ff4757;
+        }
+
+        button {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #19192b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>StreamBox</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#plans">Plans</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Unlimited Movies & Entertainment</h2>
+        <p>Watch your favourite movies anytime, anywhere.</p>
+        <button onclick="alert('Welcome to StreamBox!')">
+            Explore Now
+        </button>
+    </section>
+
+    <section class="section" id="movies">
+        <h2>Popular Movies</h2>
+
+        <div class="movies">
+            <div class="movie">🎬 Action Movies</div>
+            <div class="movie">😂 Comedy Movies</div>
+            <div class="movie">❤️ Romance Movies</div>
+            <div class="movie">🚀 Sci-Fi Movies</div>
+        </div>
+    </section>
+
+    <section class="section" id="plans">
+        <h2>Choose Your Subscription</h2>
+
+        <div class="plans">
+
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <h2>₹99/month</h2>
+                <p>Standard Quality</p>
+                <p>1 Device</p>
+                <button onclick="subscribe('Basic')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <h2>₹199/month</h2>
+                <p>HD Quality</p>
+                <p>2 Devices</p>
+                <button onclick="subscribe('Standard')">Subscribe</button>
+            </div>
+
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <h2>₹299/month</h2>
+                <p>4K Quality</p>
+                <p>4 Devices</p>
+                <button onclick="subscribe('Premium')">Subscribe</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 StreamBox. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function subscribe(plan) {
+            alert("You selected the " + plan + " Plan!");
+        }
+    </script>
+
+</body>
+</html>
